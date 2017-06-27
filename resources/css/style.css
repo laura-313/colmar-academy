@@ -74,5 +74,37 @@ padding-left: 40px;
 
 .practice-section {
   display: flex;
+  flex-direction: row;
   max-width: 100%;
+}
+.practice-image {
+  max-width: 100%;
+}
+.main-practice-box {
+  display: flex;
+  flex-direction: column;
+}
+/*.practice-image-content {
+  max-width: 100%;
+}*/
+.practice-boxes {
+  width: 423px;
+}
+.practice-box {
+display: flex;
+}
+.practice-box img {
+justify-content: flex-start;
+}
+.practice-box-text {
+/*flex-direction: column;*/
+}
+
+/*start-learning*/
+
+.start-learning-box {
+  width: 100%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
