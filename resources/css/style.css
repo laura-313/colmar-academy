@@ -55,15 +55,24 @@ padding-left: 16px;
   margin: auto;
   background-color: lightgray;
 }
-.banner-image img {
+.banner-image {
   /*justify-content:  flex-start;*/
   display: block;
   width: 60%;
   margin-left: 24px;
   margin-bottom: 32px;
 }
-
+.banner-image img {
+  width: 100%;
+}
 .banner-content {
 justify-content: center;
-/*padding-left: 40px;*/
+padding-left: 40px;
+}
+
+/*practice-section*/
+
+.practice-section {
+  display: flex;
+  max-width: 100%;
 }
