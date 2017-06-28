@@ -56,7 +56,6 @@ padding-left: 16px;
   background-color: lightgray;
 }
 .banner-image {
-  /*justify-content:  flex-start;*/
   display: block;
   width: 60%;
   margin-left: 24px;
@@ -75,27 +74,40 @@ padding-left: 40px;
 .practice-section {
   display: flex;
   flex-direction: row;
-  max-width: 100%;
-}
-.practice-image {
-  max-width: 100%;
+  width: 100%;
+  padding-top: 32px;
 }
 .main-practice-box {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  padding-right: 24px;
+  padding-left: 24px;
 }
-/*.practice-image-content {
-  max-width: 100%;
-}*/
+
+.practice-image img{
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+
 .practice-boxes {
   width: 423px;
 }
 .practice-box {
 display: flex;
+flex-direction: row;
+width: 100%;
 }
 .practice-box img {
 justify-content: flex-start;
+padding: 16px;
+
 }
+.orientation-image.campus-image.guest-image {
+  width: 35%;
+}
+
 .practice-box-text {
 /*flex-direction: column;*/
 }
@@ -103,8 +115,84 @@ justify-content: flex-start;
 /*start-learning*/
 
 .start-learning-box {
-  width: 100%;
+  max-width: 100%;
+  background-color: lightgray;
+  padding-bottom: 32px;
+
+}
+.start-learning {
+  text-align: center;
+  padding-top: 32px;
+
+}
+
+.start-learning-classes {
   margin: auto;
-  flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
+}
+.learning-box {
+  margin-left: 32px;
+  margin-top: 16px;
+  width: 30%;
+  background-color: white;
+}
+.learning-box img {
+  max-width: 100%;
+}
+
+
+
+/*thesis-section*/
+
+.thesis-section {
+}
+
+.thesis-heading {
+  text-align: center;
+}
+.thesis-information {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.video-section {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 16px;
+}
+.thesis-video {
+  width: 100%;
+}
+
+.thesis-events {
+  display: flex;
+  flex-direction: column;
+}
+.thesis-detail-section {
+  display: flex;
+  flex-direction: row;
+  /*width: 423px;*/
+}
+.thesis-detail-section#fisma {
+  background-color: lightgray;
+
+
+}
+.thesis-info-image {
+  display: flex;
+  display: inline;
+  padding: 16px;
+}
+.thesis-infotext {
+padding-top: 64px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer-nav a{
+  justify-content: flex-end;
 }
