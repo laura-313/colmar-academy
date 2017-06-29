@@ -1,5 +1,6 @@
 html {
   font-size: 18px;
+  font-family: palatino;
 }
 
 /*nav bar*/
@@ -30,7 +31,8 @@ nav {
   height: 100%;
   margin-left: 24px;
   margin-right: 20px;
-  align-self: center
+  align-self: center;
+  padding-top: 4px;
 }
 
 p#colmar {
@@ -99,11 +101,12 @@ nav li a:hover {
 }
 .banner-image img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 .banner-content {
 justify-content: center;
 padding-left: 40px;
+max-width: 30%;
 }
 .button {
   justify-content: center;
@@ -113,8 +116,9 @@ padding-left: 40px;
 border-radius: 8px;
 font-size: 32px;
 background-color: rgb(154, 137, 101);
+padding: 20px;
 }
-button:hover {
+  button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
   color: white;
 }
@@ -123,11 +127,31 @@ button:hover {
 @media screen and (max-width: 470px) {
 .banner-section {
   display: flex;
-  flex-direciton: column;
+  flex-direction: column;
+}
+.banner-content {
+  padding: initial;
+
 }
 .banner-image {
   height: 180px;
   width: auto;
+  margin: auto;
+  overflow: hidden;
+  opacity: .3;
+}
+.banner-image img {
+  width: 100%;
+}
+.banner-content h1, h2 {
+  padding-left: 16px;
+}
+.button button {
+  width: 100%;
+}
+button:active {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  color: white;
 }
 }
 /*practice-section*/
@@ -145,11 +169,13 @@ button:hover {
   padding-right: 24px;
   padding-left: 24px;
 }
+.practice-image {
+  padding-bottom: 32px;
 
+}
 .practice-image img{
   width: 100%;
-  padding-bottom: 32px;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 
@@ -168,19 +194,45 @@ button:hover {
 }
 .image-box img {
  width: 100%;
+ }
+
+.practice-box-text  {
+  word-wrap: break-word;
+  max-width: 40%;
 
 }
-
+.practice-box-text h4 {
+  font-weight: normal;
+}
 .practice-box-text a {
 text-decoration: none;
  }
 
+ .practice-box:hover {
+   border: 6px solid rgb(154, 137, 101);
+ }
 /*practice-section-small-screen*/
 
 @media screen and (max-width: 470px){
-  .practice-image .practice-image-content {
+  .main-practice-box {
     display: none;
   }
+  .practice-boxes {
+    padding-bottom: 32px;
+  }
+  .practice-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+  .practice-box-text h2, h4 {
+    padding-left: 16px;
+  }
+  .practice-box-text a {
+    padding-left: 16px;
+  }
+
 }
 
 
@@ -190,7 +242,9 @@ text-decoration: none;
   max-width: 100%;
   background-color: lightgray;
   padding-bottom: 32px;
-
+}
+.start-learning-box-m {
+  display: none;
 }
 .start-learning {
   text-align: center;
@@ -208,11 +262,56 @@ text-decoration: none;
   margin-top: 16px;
   width: 30%;
   background-color: white;
+  border: 3px solid rgb(154, 137, 101);
+
 }
 .learning-box img {
   max-width: 100%;
 }
+.learning-box:hover {
+  border: 6px solid rgb(154, 137, 101);
+}
+.learning-mobile {
+  display: none;
+}
+@media screen and (max-width: 470px) {
+  .start-learning-box {
+    display: none;
+  }
+   .start-learning-box-m {
+    max-width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .learning-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+ .course-button {
+   background-color: lightgray;
+   color: black;
+   height: 40px;
+   border: 3px solid darkgray;
+   text-align: center;
+   align-items: center;
+   margin-bottom: 8px;
+ }
+ .course-button a {
+   text-decoration: none;
+   color: black;
+   font-family: serif;
+   font-size:20px;
+   font-weight: bold;
+}
+ .course-button:active {
+   background-color: darkgray;
+   color: gold;
+
+ }
+}
 
 
 /*thesis-section*/
@@ -237,6 +336,7 @@ text-decoration: none;
 }
 .thesis-video {
   width: 100%;
+  border: 3px solid rgb(154, 137, 101);
 }
 
 .thesis-events {
@@ -258,9 +358,22 @@ text-decoration: none;
   display: inline;
   padding: 16px;
 }
+.thesis-info-image img {
+  border-radius: 4px;
+
+}
 .thesis-infotext {
 padding-top: 64px;
 }
+@media screen and (max-width: 470px) {
+  .thesis-events {
+    display: none;
+  }
+  .video-section {
+    width: 100%;
+    margin: initial;
+    }
+  }
 
 /*footer*/
 .footer {
