@@ -1,40 +1,50 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /*nav bar*/
 
 .nav-bar {
-  background-color: rgb(77, 205, 171);
+  /*background-color: rgb(242, 182,50);*/
+  background-color: rgb(154, 137, 101);
   color: white;
   height: 64px;
   width: 100%;
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.nav-bar#mobile {
+  display: none;
 }
 .logo {
   justify-content: flex-start;
-  margin-left: 24px;
-  padding-right: 20px;
+  height: 100%;
 }
 .logo img {
   width: auto;
   height: 100%;
+  margin-left: 24px;
+  margin-right: 20px;
+  align-self: center
 }
 /*.logo p {
   display: inline-block;
 }*/
 p#colmar {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
+  text-shadow: 3px 2px black;
 }
 p#academy {
-  font-size: 24px;
+  font-size: 32px;
   font-style: normal;
 }
-nav {
-  justify-content: flex-end;
-}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -43,12 +53,16 @@ nav ul {
 }
 nav li {
 list-style-type: none;
-padding-left: 16px;
+padding-right: 16px;
 }
-
+nav li a {
+  color: white;
+}
+nav li a:hover {
+  font-size: 125%;
+}
 /*banner section*/
 .banner-section {
-  padding-top: 32px;
   display: flex;
   align-items: center;
   max-width: 100%;
@@ -60,13 +74,28 @@ padding-left: 16px;
   width: 60%;
   margin-left: 24px;
   margin-bottom: 32px;
+  margin-top: 32px;
 }
 .banner-image img {
   width: 100%;
+  border-radius: 6px;
 }
 .banner-content {
 justify-content: center;
 padding-left: 40px;
+}
+.button {
+  justify-content: center;
+  display: flex;
+}
+.button button {
+border-radius: 8px;
+font-size: 32px;
+background-color: rgb(154, 137, 101);
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  color: white;
 }
 
 /*practice-section*/
@@ -88,29 +117,33 @@ padding-left: 40px;
 .practice-image img{
   width: 100%;
   padding-bottom: 32px;
+  border-radius: 6px;
 }
 
 
 .practice-boxes {
   width: 423px;
+  display: flex;
+  flex-direction: column;
 }
 .practice-box {
-display: flex;
-flex-direction: row;
-width: 100%;
+ display: flex;
+ flex-direction: row;
 }
-.practice-box img {
-justify-content: flex-start;
-padding: 16px;
+.image-box {
+  min-width: 35%;
+  padding: 16px;
+}
+.image-box img {
+ width: 100%;
 
 }
-.orientation-image.campus-image.guest-image {
-  width: 35%;
-}
 
-.practice-box-text {
-/*flex-direction: column;*/
-}
+.practice-box-text a {
+text-decoration: none;
+ }
+
+
 
 /*start-learning*/
 
@@ -189,10 +222,25 @@ padding: 16px;
 .thesis-infotext {
 padding-top: 64px;
 }
+
+/*footer*/
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.footer-nav a{
+nav {
+  display: flex;
   justify-content: flex-end;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  padding-right: 16px;
+  color: rgb(154, 137, 101);
+  text-shadow: 1px 0px black;
+  font-size: 20px;
+}
+nav a:hover {
+  font-size: 125%;
 }
