@@ -4,7 +4,7 @@ html {
 
 /*nav bar*/
 
-.nav-bar {
+.nav-bar-desktop {
   /*background-color: rgb(242, 182,50);*/
   background-color: rgb(154, 137, 101);
   color: white;
@@ -18,7 +18,7 @@ nav {
   justify-content: flex-end;
   width: 100%;
 }
-.nav-bar#mobile {
+.nav-bar-mobile {
   display: none;
 }
 .logo {
@@ -32,9 +32,7 @@ nav {
   margin-right: 20px;
   align-self: center
 }
-/*.logo p {
-  display: inline-block;
-}*/
+
 p#colmar {
   font-size: 32px;
   font-weight: bold;
@@ -61,6 +59,19 @@ nav li a {
 nav li a:hover {
   font-size: 125%;
 }
+/*nav-bar for small screen*/
+
+@media screen and (max-width: 470px;){
+  .nav-bar-desktop {
+    display: none;
+  }
+  .nav-bar-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
 /*banner section*/
 .banner-section {
   display: flex;
@@ -97,7 +108,18 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
   color: white;
 }
+/*banner-section-small-screen*/
 
+@media screen and (max-width: 470px); {
+.banner-section {
+  display: flex;
+  flex-direciton: column;
+}
+.banner-image {
+  height: 180px;
+  width: auto;
+}
+}
 /*practice-section*/
 
 .practice-section {
@@ -143,6 +165,13 @@ button:hover {
 text-decoration: none;
  }
 
+/*practice-section-small-screen*/
+
+@media screen and (max-width: 470px;){
+  .practice-image .practice-image-content {
+    display: none;
+  }
+}
 
 
 /*start-learning*/
