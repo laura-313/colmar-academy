@@ -209,7 +209,11 @@ text-decoration: none;
  }
 
  .practice-box:hover {
-   border: 6px solid rgb(154, 137, 101);
+   /*border: 3px solid rgb(154, 137, 101);*/
+   background-color: rgb(154, 137, 101);
+ }
+ .practice-box {
+   transition: all 0.5s ease;
  }
 /*practice-section-small-screen*/
 
@@ -249,7 +253,13 @@ text-decoration: none;
 .start-learning {
   text-align: center;
   padding-top: 32px;
-
+}
+.start-learning h1 {
+  font-size: 40px; 
+}
+.start-learning h1:hover {
+  color: rgb(154, 137, 101);
+  text-shadow: 2px 1px black;
 }
 
 .start-learning-classes {
@@ -270,7 +280,16 @@ text-decoration: none;
 }
 .learning-box:hover {
   border: 6px solid rgb(154, 137, 101);
+  background-color: rgb(154, 137, 101);
+  opacity: 1;
 }
+.learning-box {
+   opacity: 0.5;
+   transition: all 0.5s ease;
+ }
+
+
+
 .learning-mobile {
   display: none;
 }
