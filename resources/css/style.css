@@ -1,6 +1,6 @@
 html {
   font-size: 18px;
-  font-family: palatino;
+  font-family: Trebuchet MS;
 }
 
 /*nav bar*/
@@ -117,6 +117,7 @@ border-radius: 8px;
 font-size: 32px;
 background-color: rgb(154, 137, 101);
 padding: 20px;
+width: 100%;
 }
   button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
@@ -131,6 +132,7 @@ padding: 20px;
 }
 .banner-content {
   padding: initial;
+  max-width: 100%;
 
 }
 .banner-image {
@@ -209,8 +211,7 @@ text-decoration: none;
  }
 
  .practice-box:hover {
-   /*border: 3px solid rgb(154, 137, 101);*/
-   background-color: rgb(154, 137, 101);
+   background-color: rgba(154, 137, 101, 0.5);
  }
  .practice-box {
    transition: all 0.5s ease;
@@ -255,11 +256,7 @@ text-decoration: none;
   padding-top: 32px;
 }
 .start-learning h1 {
-  font-size: 40px; 
-}
-.start-learning h1:hover {
-  color: rgb(154, 137, 101);
-  text-shadow: 2px 1px black;
+  font-size: 40px;
 }
 
 .start-learning-classes {
@@ -279,15 +276,17 @@ text-decoration: none;
   max-width: 100%;
 }
 .learning-box:hover {
-  border: 6px solid rgb(154, 137, 101);
-  background-color: rgb(154, 137, 101);
+  border: 6px solid rgba(154, 137, 101, 0.6);
+  background-color: rgba(154, 137, 101, 0.6);
   opacity: 1;
 }
 .learning-box {
-   opacity: 0.5;
+   opacity: 0.7;
    transition: all 0.5s ease;
  }
-
+.learning-box-text {
+  padding-left: 16px;
+}
 
 
 .learning-mobile {
@@ -317,6 +316,7 @@ text-decoration: none;
    text-align: center;
    align-items: center;
    margin-bottom: 8px;
+   padding-top: 10px;
  }
  .course-button a {
    text-decoration: none;
@@ -324,6 +324,7 @@ text-decoration: none;
    font-family: serif;
    font-size:20px;
    font-weight: bold;
+   margin-top: 8px;
 }
  .course-button:active {
    background-color: darkgray;
@@ -370,6 +371,17 @@ text-decoration: none;
 .thesis-detail-section#fisma {
   background-color: lightgray;
 
+}
+.thesis-detail-section#fisma:hover {
+  border: 3px solid rgb(154, 137, 101);
+  transition: border 0.5s ease;
+
+
+}
+.thesis-detail-section#nyc:hover {
+
+  background-color: rgba(154, 137, 101, 0.6);
+  transition: background-color 0.5s ease;
 
 }
 .thesis-info-image {
@@ -398,19 +410,28 @@ padding-top: 64px;
 .footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  border-top: 1px solid lightgray
 }
-nav {
+.footer p {
+  width: 50%;
+}
+.footer p, a {
+  font-size: 16px;
+  color: gray;
+
+}
+nav#bottom {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
 }
 nav a {
   text-decoration: none;
   padding-right: 16px;
-  color: rgb(154, 137, 101);
+  /*color: rgb(154, 137, 101);
   text-shadow: 1px 0px black;
-  font-size: 20px;
+  font-size: 20px;*/
 }
 nav a:hover {
   font-size: 125%;
