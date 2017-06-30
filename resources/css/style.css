@@ -6,7 +6,6 @@ html {
 /*nav bar*/
 
 .nav-bar-desktop {
-  /*background-color: rgb(242, 182,50);*/
   background-color: rgb(154, 137, 101);
   color: white;
   height: 64px;
@@ -52,8 +51,8 @@ nav ul {
 
 }
 nav li {
-list-style-type: none;
-padding-right: 16px;
+  list-style-type: none;
+  padding-right: 16px;
 }
 nav li a {
   color: white;
@@ -104,20 +103,20 @@ nav li a:hover {
   border-radius: 4px;
 }
 .banner-content {
-justify-content: center;
-padding-left: 40px;
-max-width: 30%;
+  justify-content: center;
+  padding-left: 40px;
+  max-width: 30%;
 }
 .button {
   justify-content: center;
   display: flex;
 }
 .button button {
-border-radius: 8px;
-font-size: 32px;
-background-color: rgb(154, 137, 101);
-padding: 20px;
-width: 100%;
+  border-radius: 8px;
+  font-size: 32px;
+  background-color: rgb(154, 137, 101);
+  padding: 20px;
+  width: 100%;
 }
   button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
@@ -180,7 +179,6 @@ button:active {
   border-radius: 4px;
 }
 
-
 .practice-boxes {
   width: 423px;
   display: flex;
@@ -231,6 +229,9 @@ text-decoration: none;
     padding-left: 16px;
     padding-top: 16px;
   }
+  .practice-box-text {
+    max-width: 100%;
+  }
   .practice-box-text h2, h4 {
     padding-left: 16px;
   }
@@ -251,6 +252,9 @@ text-decoration: none;
 .start-learning-box-m {
   display: none;
 }
+.learn-mobile-title {
+display: none;
+}
 .start-learning {
   text-align: center;
   padding-top: 32px;
@@ -270,6 +274,8 @@ text-decoration: none;
   width: 30%;
   background-color: white;
   border: 3px solid rgb(154, 137, 101);
+  transition: background-color 0.5s ease;
+  opacity: 0.6;
 
 }
 .learning-box img {
@@ -279,11 +285,8 @@ text-decoration: none;
   border: 6px solid rgba(154, 137, 101, 0.6);
   background-color: rgba(154, 137, 101, 0.6);
   opacity: 1;
-}
-.learning-box {
-   opacity: 0.7;
-   transition: all 0.5s ease;
  }
+
 .learning-box-text {
   padding-left: 16px;
 }
@@ -302,6 +305,9 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
   }
+  .learn-mobile-title {
+    text-align: center;
+  }
 
   .learning-mobile {
     display: flex;
@@ -316,12 +322,12 @@ text-decoration: none;
    text-align: center;
    align-items: center;
    margin-bottom: 8px;
-   padding-top: 10px;
+   padding-top: 16px;
  }
  .course-button a {
    text-decoration: none;
    color: black;
-   font-family: serif;
+   font-family: trebuchet ms;
    font-size:20px;
    font-weight: bold;
    margin-top: 8px;
@@ -336,8 +342,7 @@ text-decoration: none;
 
 /*thesis-section*/
 
-.thesis-section {
-}
+
 
 .thesis-heading {
   text-align: center;
@@ -394,7 +399,7 @@ text-decoration: none;
 
 }
 .thesis-infotext {
-padding-top: 64px;
+  padding-top: 64px;
 }
 @media screen and (max-width: 470px) {
   .thesis-events {
@@ -403,7 +408,11 @@ padding-top: 64px;
   .video-section {
     width: 100%;
     margin: initial;
+    margin-bottom: 24px;
     }
+  .video-text {
+    display: none;
+  }
   }
 
 /*footer*/
@@ -429,10 +438,15 @@ nav#bottom {
 nav a {
   text-decoration: none;
   padding-right: 16px;
-  /*color: rgb(154, 137, 101);
-  text-shadow: 1px 0px black;
-  font-size: 20px;*/
 }
 nav a:hover {
   font-size: 125%;
 }
+@media screen and (max-width: 470px) {
+  nav#bottom {
+    display: none;
+  }
+  .footer p {
+    width: 100%;
+  }
+  }
