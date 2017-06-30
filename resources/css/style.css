@@ -274,7 +274,7 @@ display: none;
   width: 30%;
   background-color: white;
   border: 3px solid rgb(154, 137, 101);
-  transition: background-color 0.5s ease;
+  transition: background-color 0.6s ease;
   opacity: 0.6;
 
 }
@@ -306,6 +306,7 @@ display: none;
     flex-direction: column;
   }
   .learn-mobile-title {
+    display: inline;
     text-align: center;
   }
 
